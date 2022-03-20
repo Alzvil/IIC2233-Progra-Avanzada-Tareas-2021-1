@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>967</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sala de Espera</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../sprites/Logo/Logo_transparente.png</normaloff>../sprites/Logo/Logo_transparente.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 85, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Jugadores en partida:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>411</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Arial&quot;;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>¡Vota por un mapa!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>80</y>
+      <width>161</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+border-width: 2px;
+border-color: black;
+border-style: solid;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../sprites/Mapas/Mapa ING.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>80</y>
+      <width>161</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+border-width: 2px;
+border-color: black;
+border-style: solid;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../sprites/Mapas/Mapa SJ.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>280</y>
+      <width>351</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Votos</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="votos_ing">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>310</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="votos_sj">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>310</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_votar">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>410</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>VOTAR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_1">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 15pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>USUARIO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Vacío</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Vacío</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Vacío</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estado_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>180</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Estado</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estado_1">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>120</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Estado</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estado_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>240</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Estado</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estado_4">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>300</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Estado</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_host">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>380</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>INICIAR PARTIDA</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="votar_ing">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>270</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ingeniería</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="votar_sj">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>270</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>San Joaquín</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

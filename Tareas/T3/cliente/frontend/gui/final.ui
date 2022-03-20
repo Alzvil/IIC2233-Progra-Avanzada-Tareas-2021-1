@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pantalla Final</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../sprites/Logo/Logo_transparente.png</normaloff>../sprites/Logo/Logo_transparente.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 85, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>711</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string>GANA LA PARTIDA</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ganador">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 20pt &quot;Arial&quot;;
+color: rgb(255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>NOMBRE USUARIO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_ganador">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>90</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 20pt &quot;Arial&quot;;
+color: rgb(255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>PTS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>180</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Nombre 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>230</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Nombre 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nombre_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>280</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Nombre 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>180</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Puntaje</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>230</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Puntaje</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>280</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Puntaje</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>2do</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>3ro</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="puntaje_6">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 13pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>4to</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>350</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>¡Volver a jugar!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>170</y>
+      <width>331</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+font: 75 25pt &quot;Times New Roman&quot;;
+color: rgb(255, 255, 255);
+border-width: 2px;
+border-color: black;
+border-style: solid;
+</string>
+    </property>
+    <property name="pixmap">
+     <pixmap>../sprites/Bonus/pangui_celebrando.gif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

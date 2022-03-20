@@ -1,0 +1,2040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Alzvil DCCimpsons - Juego</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../sprites/Objetos/Dona.png</normaloff>../sprites/Objetos/Dona.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>671</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(138, 207, 207)</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>101</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(138, 207, 207)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../sprites/Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>VIDA</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="vida">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="tiempo">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>TIEMPO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>ITEMS BUENOS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>ITEMS MALOS</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="malos">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="buenos">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="ronda">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>20</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>RONDA N°</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="puntaje">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>PUNTAJE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_pausa">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>PAUSA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_salir">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>SALIR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="superior_1">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>691</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="mapa">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>671</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../sprites/Mapa/Planta_nuclear/Mapa.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="personaje">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>41</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="abajo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>591</y>
+     <width>691</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="costado_d">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>200</y>
+     <width>20</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="costado_i">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>200</y>
+     <width>20</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>50</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>480</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_1__8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>50</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__1">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>270</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>310</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__4">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>390</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__5">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>440</y>
+     <width>56</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__6">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>480</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__7">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>520</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_3__8">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>560</y>
+     <width>56</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>310</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>350</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>390</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>440</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__6">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>480</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>520</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_5__8">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>560</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>270</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>310</y>
+     <width>41</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>390</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>440</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>480</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>520</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_2__8">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>560</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__1">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>310</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__4">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>390</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__5">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>440</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__6">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>480</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__7">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>520</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_4__8">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>560</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__1">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>310</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__3">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>350</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__4">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>390</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__5">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>440</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>480</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__7">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>520</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_6__8">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>560</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__1">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>310</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__3">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>350</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__4">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>390</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__5">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>440</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__6">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>480</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__7">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>520</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_7__8">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>560</y>
+     <width>61</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>310</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>350</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__4">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>390</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__5">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>430</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__6">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>480</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__7">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>520</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_8__8">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>560</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__1">
+   <property name="geometry">
+    <rect>
+     <x>627</x>
+     <y>270</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__2">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>310</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__3">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>350</y>
+     <width>43</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__1">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__1">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>270</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__1">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>270</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__2">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>310</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>310</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>310</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__3">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>350</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__3">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>350</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>350</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__4">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>390</y>
+     <width>51</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>390</y>
+     <width>51</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>390</y>
+     <width>51</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__4">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>390</y>
+     <width>51</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__5">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>430</y>
+     <width>43</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__5">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>430</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__5">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>430</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>430</y>
+     <width>43</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__6">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>470</y>
+     <width>43</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__6">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>480</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__6">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>480</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__6">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>480</y>
+     <width>43</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>520</y>
+     <width>43</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__7">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>516</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__7">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>516</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__7">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>516</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_9__8">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>558</y>
+     <width>43</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_10__8">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>558</y>
+     <width>59</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_11__8">
+   <property name="geometry">
+    <rect>
+     <x>571</x>
+     <y>558</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pos_12__8">
+   <property name="geometry">
+    <rect>
+     <x>628</x>
+     <y>558</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0%)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>mapa</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>abajo</zorder>
+  <zorder>costado_d</zorder>
+  <zorder>costado_i</zorder>
+  <zorder>pos_1__1</zorder>
+  <zorder>pos_1__2</zorder>
+  <zorder>pos_1__3</zorder>
+  <zorder>pos_1__4</zorder>
+  <zorder>pos_1__5</zorder>
+  <zorder>pos_1__6</zorder>
+  <zorder>pos_1__7</zorder>
+  <zorder>pos_1__8</zorder>
+  <zorder>pos_3__1</zorder>
+  <zorder>pos_3__2</zorder>
+  <zorder>pos_3__3</zorder>
+  <zorder>pos_3__4</zorder>
+  <zorder>pos_3__5</zorder>
+  <zorder>pos_3__6</zorder>
+  <zorder>pos_3__7</zorder>
+  <zorder>pos_3__8</zorder>
+  <zorder>pos_5__1</zorder>
+  <zorder>pos_5__2</zorder>
+  <zorder>pos_5__3</zorder>
+  <zorder>pos_5__4</zorder>
+  <zorder>pos_5__5</zorder>
+  <zorder>pos_5__6</zorder>
+  <zorder>pos_5__7</zorder>
+  <zorder>pos_5__8</zorder>
+  <zorder>pos_2__1</zorder>
+  <zorder>pos_2__2</zorder>
+  <zorder>pos_2__3</zorder>
+  <zorder>pos_2__4</zorder>
+  <zorder>pos_2__5</zorder>
+  <zorder>pos_2__6</zorder>
+  <zorder>pos_2__7</zorder>
+  <zorder>pos_2__8</zorder>
+  <zorder>pos_4__1</zorder>
+  <zorder>pos_4__2</zorder>
+  <zorder>pos_4__3</zorder>
+  <zorder>pos_4__4</zorder>
+  <zorder>pos_4__5</zorder>
+  <zorder>pos_4__6</zorder>
+  <zorder>pos_4__7</zorder>
+  <zorder>pos_4__8</zorder>
+  <zorder>pos_6__1</zorder>
+  <zorder>pos_6__2</zorder>
+  <zorder>pos_6__3</zorder>
+  <zorder>pos_6__4</zorder>
+  <zorder>pos_6__5</zorder>
+  <zorder>pos_6__6</zorder>
+  <zorder>pos_6__7</zorder>
+  <zorder>pos_6__8</zorder>
+  <zorder>pos_7__1</zorder>
+  <zorder>pos_7__2</zorder>
+  <zorder>pos_7__3</zorder>
+  <zorder>pos_7__4</zorder>
+  <zorder>pos_7__5</zorder>
+  <zorder>pos_7__6</zorder>
+  <zorder>pos_7__7</zorder>
+  <zorder>pos_7__8</zorder>
+  <zorder>pos_8__1</zorder>
+  <zorder>pos_8__2</zorder>
+  <zorder>pos_8__3</zorder>
+  <zorder>pos_8__4</zorder>
+  <zorder>pos_8__5</zorder>
+  <zorder>pos_8__6</zorder>
+  <zorder>pos_8__7</zorder>
+  <zorder>pos_8__8</zorder>
+  <zorder>pos_12__1</zorder>
+  <zorder>pos_12__2</zorder>
+  <zorder>pos_12__3</zorder>
+  <zorder>pos_11__1</zorder>
+  <zorder>pos_10__1</zorder>
+  <zorder>pos_9__1</zorder>
+  <zorder>pos_9__2</zorder>
+  <zorder>pos_10__2</zorder>
+  <zorder>pos_11__2</zorder>
+  <zorder>pos_9__3</zorder>
+  <zorder>pos_10__3</zorder>
+  <zorder>pos_11__3</zorder>
+  <zorder>pos_12__4</zorder>
+  <zorder>pos_9__4</zorder>
+  <zorder>pos_10__4</zorder>
+  <zorder>pos_11__4</zorder>
+  <zorder>pos_9__5</zorder>
+  <zorder>pos_10__5</zorder>
+  <zorder>pos_11__5</zorder>
+  <zorder>pos_12__5</zorder>
+  <zorder>pos_9__6</zorder>
+  <zorder>pos_10__6</zorder>
+  <zorder>pos_11__6</zorder>
+  <zorder>pos_12__6</zorder>
+  <zorder>pos_9__7</zorder>
+  <zorder>pos_10__7</zorder>
+  <zorder>pos_11__7</zorder>
+  <zorder>pos_12__7</zorder>
+  <zorder>pos_9__8</zorder>
+  <zorder>pos_10__8</zorder>
+  <zorder>pos_11__8</zorder>
+  <zorder>pos_12__8</zorder>
+  <zorder>personaje</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

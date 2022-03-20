@@ -1,0 +1,12 @@
+# --------------------------------------------
+# Python
+# --------------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+canciones/
+sprites/
+*.py[cod]
+*$py.class
+
+*.pdf
